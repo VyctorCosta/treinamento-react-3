@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   min-width: 25rem;
   min-height: 30rem;
   background-color: ${({ theme }) => theme.card.bg_color};
@@ -12,6 +13,12 @@ export const Container = styled.div`
 
   img {
     border-radius: 50%;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 `;
 
