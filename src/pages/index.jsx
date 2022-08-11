@@ -9,6 +9,8 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  max-width: 145rem;
+  margin: 0 auto;
 
   header {
     display: flex;
