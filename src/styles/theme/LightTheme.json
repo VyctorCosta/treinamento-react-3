@@ -1,0 +1,8 @@
+{
+  "theme_name": "light",
+  "bg_color": "#cfcfcf",
+  "card": {
+    "bg_color": "#d9726f",
+    "text_color": "#000"
+  }
+}
