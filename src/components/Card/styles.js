@@ -5,20 +5,39 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   min-width: 25rem;
-  min-height: 30rem;
-  background-color: ${({ theme }) => theme.card.bg_color};
-  color: ${({ theme }) => theme.card.text_color};
+  /* max-height: 20rem; */
+  background-color: ${({ theme, card_type }) => theme[card_type].bg_color};
+  color: ${({ theme, card_type }) => theme[card_type].text_color};
+  padding: 2rem 0;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
   img {
     border-radius: 50%;
   }
 
-  div {
+  .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .divFollowers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    
+    p {
+      font-size: 2rem;
+    }
   }
 `;
 

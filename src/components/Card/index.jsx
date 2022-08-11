@@ -1,19 +1,26 @@
 import Image from 'next/image';
 import { Container } from './styles';
 
-export default function Card() {
+export default function Card({ card_type }) {
   return (
-    <Container>
-      <Image src="http://github.com/VyctorCosta.png" alt="Foto de perfil do usuario" width={200} height={200} />
+    <Container card_type={card_type}>
+      <Image
+        src="http://github.com/VyctorCosta.png"
+        alt="Foto de perfil do usuario"
+        width={110}
+        height={110}
+      />
 
-      <span>
-        <h1>name</h1>
-        <h2>company</h2>
-      </span>
+      <div className="wrapper">
+        <span>
+          <h1>name</h1>
+          <h2>company</h2>
+        </span>
 
-      <div>
-        <p>followers</p>
-        <p>following</p>
+        <div className="divFollowers">
+          <p>followers: </p>
+          <p>following: </p>
+        </div>
       </div>
     </Container>
   );

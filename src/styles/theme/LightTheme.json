@@ -1,8 +1,16 @@
 {
   "theme_name": "light",
   "bg_color": "#cfcfcf",
-  "card": {
+  "main_card": {
     "bg_color": "#d9726f",
+    "text_color": "#000"
+  },
+  "follower_card": {
+    "bg_color": "#7bd887",
+    "text_color": "#000"
+  },
+  "following_card": {
+    "bg_color": "#c2548b",
     "text_color": "#000"
   }
 }

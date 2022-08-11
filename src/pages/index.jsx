@@ -8,7 +8,7 @@ import Card from "../components/Card";
 const Main = styled.main`
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 1.5rem;
 
   header {
     display: flex;
@@ -19,8 +19,8 @@ const Main = styled.main`
       padding: 1.5rem 2rem;
       border: none;
       border-radius: 0.8rem;
-      background-color: ${({ theme }) => theme.card.bg_color};
-      color: ${({ theme }) => theme.card.text_color};
+      background-color: ${({ theme }) => theme.main_card.bg_color};
+      color: ${({ theme }) => theme.main_card.text_color};
       cursor: pointer;
     }
   }
@@ -29,6 +29,8 @@ const Main = styled.main`
 const DivMainCard = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
 `;
 
 const DivSecondaryCard = styled.div`
@@ -44,7 +46,6 @@ export default function Home() {
   const toggleTheme = () => {
     setTheme(theme.theme_name === "light" ? DarkTheme : LightTheme);
   }
-  console.log(theme);
   
   return (
     <ThemeProvider theme={theme}>
@@ -55,10 +56,21 @@ export default function Home() {
         </header>
 
         <DivMainCard>
-          <Card />
+          <Card card_type="main_card"/>
         </DivMainCard>
 
-        <DivSecondaryCard></DivSecondaryCard>
+        <DivSecondaryCard>
+          <Card card_type="follower_card" />
+          <Card card_type="follower_card" />
+          <Card card_type="follower_card" />
+          <Card card_type="follower_card" />
+          <Card card_type="follower_card" />
+          <Card card_type="following_card" />
+          <Card card_type="following_card" />
+          <Card card_type="following_card" />
+          <Card card_type="following_card" />
+          <Card card_type="following_card" />
+        </DivSecondaryCard>
       </Main>
     </ThemeProvider>
   );
