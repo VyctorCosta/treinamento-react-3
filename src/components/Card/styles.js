@@ -14,3 +14,11 @@ export const Container = styled.div`
     border-radius: 50%;
   }
 `;
+
+export const DivInfoString = styled.span`
+  display: flex;
+`;
+
+export const DivInfoNumbers = styled.div`
+  display: flex;
+`;
